@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import streamlit as st
 import pandas as pd
 
@@ -56,3 +57,13 @@ elif page == "Consume Spares":
     if st.button("Consume"):
         # Logic to reduce quantity (to be added)
         st.success(f"Recorded usage of {quantity_used} units.")
+=======
+import streamlit as st
+
+st.title("🔧 Spare Parts Tracker")
+
+part = st.text_input("Enter part name")
+qty = st.number_input("Enter quantity", min_value=0)
+if st.button("Save Part"):
+    st.success(f"Saved {qty} of {part}")
+>>>>>>> 7bf921cdc6684823b27142b5204d0590de02bc32
